@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <style>
+            #enter{
+                width: 280px;
+                position: absolute;
+                top:30%;
+                left:43%;
+                color: black;
+            }
+            #l1{
+                border: 3px;
+                padding: 3px;
+                background-color: rgb(28, 113, 211);
+                color: azure;
+                box-shadow: rgb(63, 53, 53);
+            }
+            #l2{
+                padding: 30px;
+                background-image: url("sbi project.jpeg");
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: 250px 200px;
+            }
+            #l3{
+                text-align: justify;
+            }
+            .main-header { background-color: #384047;}
+            .main-logo { background-color: #5fcf80;color: #85b9e9;}
+            .main-nav li { background-color: #5fcf80;color: #85b9e9;}
+            .main-logo,
+            .main-nav,
+            .main-nav li{
+            display:inline;
+            padding: 10px 20px;
+            border-radius:5px;
+            }
+            .main-header{
+         
+         padding:30px;}
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #box{
+            width: 200px;
+            height: 2em;
+            border: medium #85b9e9;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            border: 1px solid;
+            }
+        </style>
+    </head>
+    <center>
+    <div id="l1">
+
+    </div>
+      <div id="l2">
+      </div></br>
+      <div>
+        <header class="main-header"> 
+            <h3 class="main-logo">
+                <a href="https://www.sbicard.com/en/help.page">Help</a></h3>
+            <ul class="main-nav">
+            <li> <a href="https://www.sbicard.com/en/personal/offers.page">Offers</a></li>
+            <li> <a href="https://www.sbicard.com/en/personal/rewards.page">Rewards</a></li>
+            </ul></header>
+        </div>
+        <div id ="enter">
+        Enter Card Credentials :
+        </div></br></br>
+               <body>
+                     <form onsubmit="form()">
+                <img src="20200207_003004.jpg"width="200"height="100">      
+                <h3>Choose the type of payment:</h3><br>
+<select id="box">
+        <option value=""><a href="">Credit card</a></option>
+        <option value="">Rupay</option>
+        <option value="https://www.sbicard.com/en/personal/pay.page#area8">Debit card</option>  
+        </select>
+        <h3 id="l3">More type of payments :</h3>
+               <ul id="l3">
+                   <li><a href="https://www.onlinesbi.com/retail/login.htm">Net Banking</a></li></br>
+                   <li><a href="">PrePaid Cards</a></li></br>
+
+                    <li><a href="https://pay.google.com/gp/w/u/0/home/signup?sctid=3351428709084795"><img src="google pay.jpeg" width="75" height="50" style="float:left">G-Pay</a></li>
+               </ul> 
+           
+
+                        </br>                     
+                    <h3>Card number :</h3><br>
+                     <input type="number" required value="" id="box"/></br>
+</br>
+
+                    <h3>Card name :</h3></br>
+                    <input type="text" required name="" value="" id="box">
+
+                    <h3>Enter CVV :</h3></br>
+                    <input id="num" required value="">
+                    <button type="button" onclick="cvv()" aria-required="true">Submit code</button>
+                    <p id="n"></p>
+                    <script>
+                    function cvv( )
+                     {
+                    var x, text;
+
+
+                     x = document.getElementById("num").value;
+
+
+  if (isNaN(x) || x <100  || x > 999) 
+                    {
+    text="CVV code must be three digits";
+  } 
+  else 
+  {
+    text = "CVV code entered successfully";
+  }
+  document.getElementById("n").innerHTML = text;
+}
+</script>
+
+
+                    <h3> Expiration :</h3><br> 
+                    <input type="date" id="box" required/></br></br>
+                    <input type="checkbox"/>I am above 12 years and agree terms of use</br></br></br>
+                    
+
+            
+            
+                    <a href="#" <b></a><u>click below to submit your details</u></b></a></br></br></br>
+                     
+                    <button onclick="myFunction()">Proceeed Payment</button>
+            
+    
+            <script type="text/javascript">
+            function myFunction() 
+            {
+            confirm("check the given information before proceeding");
+             }
+            </script>
+            <script>
+                function form()
+                {
+                    document.writeln("<b>Your Payment is Successfull </b></br></br><b>Enjoy Your movie</b>");
+                }
+            </script></br></br>
+
+            </form>
+            </body>
+            </center>
+        </html>
